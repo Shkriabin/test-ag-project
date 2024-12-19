@@ -1,0 +1,39 @@
+div {
+  margin: 0 0 10px 0;
+}
+
+label {
+  display: block;
+  margin: 0 3px 0 0;
+  width: 40px;
+}
+
+input,  textarea {
+  border: 0;
+  width: 500px;
+  background: #ebebeb;
+  margin: 0 10px 0 0;
+  box-sizing: border-box;
+}
+
+input {
+  padding: 0 10px 0;
+  height: 40px;
+}
+
+textarea {
+  padding: 10px;
+  background: #ebebeb;
+  min-height: 100px;
+}
+
+button {
+  width: 500px;
+  height: 40px;
+  border: 0;
+  margin: 0 5px 0 0;
+  padding: 10px;
+  cursor: pointer;
+  background: lightgreen;
+}
+

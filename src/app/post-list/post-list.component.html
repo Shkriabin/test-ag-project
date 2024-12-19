@@ -1,0 +1,29 @@
+<h1>List of posts:</h1>
+
+<div class="top-panel">
+  <input
+    type="text"
+    placeholder="Search..."
+    (input)="search($event)"
+  />
+  <button [routerLink]="['/new']" class="button-new">New Post</button>
+
+  @for (page of [].constructor(totalPages$ | async); track $index) {
+    <button (click)="changePage($index + 1)" [class.active]="$index + 1 === (page$ | async)">
+      {{ $index + 1 }}
+    </button>
+  }
+</div>
+
+<ul>
+  @for (post of (posts$ | async); track post.id) {
+    <li
+      [routerLink]="['/post', post.id]"
+      [searchTerm]="(searchTerm$ | async) || ''"
+      [content]="post.title"
+      appHighlight
+    >
+      {{ post.title }}
+    </li>
+  }
+</ul>

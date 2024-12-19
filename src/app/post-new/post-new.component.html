@@ -1,0 +1,16 @@
+<app-go-back></app-go-back>
+
+<form [formGroup]="postForm" (ngSubmit)="createPost()">
+  <label for="title">Title:</label>
+  <div>
+    <input type="text" id="title" formControlName="title">
+  </div>
+
+  <label for="body">Body:</label>
+  <div>
+    <textarea type="text" id="body" formControlName="body"></textarea>
+  </div>
+  <button type="submit" [disabled]="postForm.invalid" (click)="createPost()">Create</button>
+</form>
+
+

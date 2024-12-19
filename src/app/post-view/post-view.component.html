@@ -1,0 +1,3 @@
+<app-go-back></app-go-back>
+<h1>{{ (post$ | async)?.title }}</h1>
+<div>{{ (post$ | async)?.body | textLimit: 40 }}</div>

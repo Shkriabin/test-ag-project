@@ -1,0 +1,38 @@
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #eee;
+}
+
+input {
+  height: 40px;
+  border: 0;
+  background: #ebebeb;
+  padding: 0 10px 0;
+  margin: 0 10px 0 0;
+}
+
+button {
+  height: 40px;
+  border: 0;
+  margin: 0 5px 0 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.active {
+  background: greenyellow;
+}
+
+.button-new {
+  background: #8affd0;
+  margin: 0 10px 0 0;
+}
