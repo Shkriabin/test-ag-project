@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {Post} from '../storage/post.reducer';
-import {selectPost, selectPosts} from '../storage/post.selectors';
+import {selectPost} from '../storage/post.selectors';
 import {Store} from '@ngrx/store';
 import {Observable} from 'rxjs';
 import {AsyncPipe} from '@angular/common';
