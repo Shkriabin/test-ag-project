@@ -6,12 +6,14 @@ import {Store} from '@ngrx/store';
 import {Observable} from 'rxjs';
 import {AsyncPipe} from '@angular/common';
 import {TextLimitPipe} from '../pipes/text-limit.pipe';
+import {GoBackComponent} from '../go-back/go-back.component';
 
 @Component({
   selector: 'app-post-view',
   imports: [
     AsyncPipe,
-    TextLimitPipe
+    TextLimitPipe,
+    GoBackComponent
   ],
   templateUrl: './post-view.component.html',
   styleUrl: './post-view.component.css'
